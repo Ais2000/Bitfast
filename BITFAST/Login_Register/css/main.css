@@ -1,0 +1,213 @@
+@import url('link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.all-body {
+    height: 100vh;
+    background-image: url(../images/purple.png);
+    padding-bottom: 8%;
+
+}
+
+img {
+    height: 80px;
+    width: 150px;
+    position: relative;
+}
+
+@media screen and (max: width 500px) {
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+#header {
+    width: 100%;
+    background: #FFF;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px 15% 0 15%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(#1e125c, #521b76)
+}
+
+#header #logo {
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: none;
+}
+
+#header #logo span {
+    color: #bbb8f1;
+}
+
+#header nav {
+    color: #8c8af0;
+}
+
+#header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+#header nav a:last-child {
+    color: white;
+    background: #7f86eb;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+
+#header nav a:hover {
+    opacity: 0.9;
+}
+
+#container {
+    margin-left: 200px;
+    overflow: hidden;
+    background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 20px;
+    height: 575px;
+}
+
+#container #content-container {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#container #content-container h1 {
+    color: #f5f0f5;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 0.9em;
+    margin-bottom: 30px;
+}
+
+@media screen and (max: width 1000px) {
+    #container #content-container h1 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+}
+
+#container #content-container h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+@media screen and (max: width 1000px) {
+    #container #content-container h2 {
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
+
+#container #content-container p {
+    line-height: 1.8em;
+    font-weight: 100;
+    color: white;
+}
+
+@media screen and (max: width 1000px) {
+    #container #content-container p {
+        font-weight: 100;
+    }
+}
+
+#container #content-container a {
+    border: none;
+    outline: none;
+    color: white;
+    border: 2px solid white;
+    padding: 16px 0px;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 40px;
+    font-size: 16px;
+    width: 160px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#container #content-container a:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max: width 800px) {
+    #container #content-container a {
+        background-size: 20%;
+    }
+}
+
+#container #bg-container {
+    background-image: url(../vector.png);
+    background-repeat: no-repeat;
+    width: 40%;
+    background-size: 75%;
+}
+
+#section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=main.css.map */

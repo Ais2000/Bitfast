@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Pay Bills</title>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()">Pay Bills</button>
+
+
+<script src="paybills.js"></script>
+<div class="form-popup" id="myForm">
+  <form action="submission.html" class="form-container">
+    <span class ="close close-btn">&times;</span>
+    <h3>Pay Bills</h3>  
+    <img src="abi1.png" alt="logos" class="images" />
+     <div class="wallet"> 
+              <div class="wallet-info">
+                <h3>Peso Wallet</h3>
+                <p id="amount" > </p>
+            <div class="progress"></div>
+        </div>
+      </div>
+<br>  
+Bill Type <br>
+
+  <select name="subject" id="subject" class="biller" required>
+    <option value="" selected="selected">Select Biller</option>
+  </select>   
+  <br>
+  <br>
+Company Name <br>
+
+  <select name="topic" id="topic" class="payer" required>
+    <option value="" selected="selected">Please select Biller first</option>
+  </select>
+  <br>
+  <br>
+    
+    <label for="account-num">Customer Account Number</label>
+    <input type="text" placeholder="Customer Account Number" name="account-num" id="custnum" required>
+    <br>
+    <label for="payment-amount">Payment Amount</label>
+    <input type="text" placeholder="PHP 0" name="payment-amount"  id="amount" required>
+    
+      <button type="submit" class="btn"  id="paybillers">Pay Bills</button>
+      <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+   
+  </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1003 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html, body {
+  border: none;
+}
+
+#profile_name {
+  font-size: 2rem;
+}
+
+#profile_username {
+  font-size: 1rem;
+}
+
+.sidebar_btn {
+  font-size: 1rem;
+}
+
+body .sidebar {
+  height: 100vh;
+  width: 16%;
+  margin-right: 2%;
+  margin-left: 9%;
+  position: fixed;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sidebar .logo {
+  height: 10vh;
+}
+
+body .sidebar .logo img {
+  width: 50%;
+  margin-top: 5%;
+}
+
+body .sidebar .profile {
+  height: 30vh;
+  margin: 10% 0;
+}
+
+body .sidebar .profile img {
+  width: 70%;
+}
+
+body .sidebar .profile h1 {
+  color: black;
+}
+
+body .sidebar .profile a {
+  color: black;
+  text-decoration: none;
+}
+
+body .sidebar .buttons a {
+  color: black;
+}
+
+body .sidebar .buttons {
+  height: 50vh;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .sidebar .buttons button {
+  background-color: transparent;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  text-indent: 20%;
+}
+
+body .sidebar .buttons button:hover {
+  background-color: #f5dcff;
+}
+
+body .sidebar .buttons button:focus {
+  color: #080808;
+}
+
+.right {
+  background-color: lightgray;
+  margin-left: 27%;
+  padding-right: 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.right .greetings h1 {
+  text-align: left;
+  margin: 1% 3%;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.right .wallets {
+  margin: 1%;
+  padding: 5%;
+  border-radius: 25px;
+  background-color: white;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right .wallets #title {
+  font-size: 200%;
+}
+
+.right .wallets h1 {
+  text-align: left;
+}
+
+.right .wallets .wallet {
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#9d33ff), to(#f37cff));
+  background: linear-gradient(90deg, #c280ff 0%, #f58eff 100%);
+  margin: 1%;
+  padding: 2% 5%;
+  color: white;
+}
+
+.right .wallets .wallet h3 {
+  font-weight: 300;
+}
+
+.right .wallets .wallet .walletamount {
+  font-weight: 700;
+  font-size: 200%;
+}
+
+.right .wallets button {
+  width: 40%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+  padding: 1%;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9d33ff;
+  border-color: #9d33ff;
+}
+
+.right .wallets button img {
+  width: 1vw;
+}
+
+.right .wallets .miniconverter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right .wallets .miniconverter h1 {
+  width: 100%;
+}
+
+.right .wallets .miniconverter input {
+  padding: 2%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-color: #9d33ff;
+}
+
+.right .wallets .miniconverter label {
+  padding: 2%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #9d33ff;
+  border-left: none;
+}
+
+.right .wallets .miniconverter img {
+  width: 1vw;
+  height: 1vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 2%;
+}
+
+.right .convertionRate {
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  background: white;
+  margin: 5% 1%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+}
+
+.right .convertionRate #exchangerateBTS {
+  background: -webkit-gradient(linear, left top, right top, from(#f39bff), to(#6f348e));
+  background: linear-gradient(90deg, #ffb5f9 0%, #d45fff 100%);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.right .convertionRate img {
+  background: -webkit-gradient(linear, left top, right top, from(#f39bff), to(#6f348e));
+  background: linear-gradient(90deg, #ffb5f9 0%, #d45fff 100%);
+  position: absolute;
+  width: 1vw;
+  border-radius: 25px;
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  padding: 2px;
+}
+
+.right .convertionRate h1 {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right .transaction {
+  background-color: white;
+  height: 60vh;
+  border-radius: 25px;
+  padding: 1%;
+  margin: 0 1%;
+}
+
+.right .transaction h2 {
+  text-align: center;
+}
+
+.item1 {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  right: -250px;
+  top: -20px;
+  border-radius: 7px;
+  background: -webkit-gradient(linear, left top, right top, from(#9d33ff), to(#f37cff));
+  background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+}
+
+.item2 {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  right: -250px;
+  border-radius: 7px;
+  background: -webkit-gradient(linear, left top, right top, from(#9d33ff), to(#f37cff));
+  background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+}
+
+.item2 p {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  left: -37px;
+  padding: 3px 0px;
+}
+
+.item2 p span {
+  font-size: 19px;
+  font-weight: bolder;
+  position: relative;
+  right: -8px;
+  top: -3px;
+}
+
+.popup .content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%) scale(0);
+          transform: translate(-50%, -150%) scale(0);
+  width: 450px;
+  height: 550px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px 5px #4b4b4b;
+          box-shadow: 0px 0px 30px 5px #4b4b4b;
+  z-index: 1;
+}
+
+.popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 30px;
+  padding: 2px 5px 7px 5px;
+  background: white;
+}
+
+.popup.active,
+.popup2.active2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.popup.active .content,
+.popup2.active2 .modal-content,
+.form-popup.active3 .form-container {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+a {
+  font-weight: 600;
+  color: white;
+}
+
+.sh .otp .second-button {
+  padding: 3px 25px;
+  position: relative;
+  top: -10px;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid #c035e5;
+  cursor: pointer;
+}
+
+.box {
+  position: relative;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 410px;
+  padding: 40px;
+  bottom: -60px;
+  right: -25px;
+}
+
+.box h2 {
+  margin: 0 0 30px;
+  padding: 0px;
+  color: black;
+  text-align: center;
+}
+
+.box .input-box {
+  position: relative;
+  right: -150px;
+  top: -45px;
+}
+
+.box .input-box input {
+  width: 120%;
+  padding: 20px 0px;
+  padding-bottom: -30px;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid black;
+}
+
+.box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;;
+  font-size: 12px;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: left;
+}
+
+
+
+body .rad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  position: relative;
+  top: -50px;
+}
+
+.rad p {
+  font-size: 16px;
+  position: relative;
+  left: -130px;
+  top: -95px;
+}
+
+.rad .radio-container {
+  position: relative;
+  top: -80px;
+  cursor: pointer;
+}
+
+.otp {
+  color: black;
+  position: relative;
+  right: -180px;
+  top: -60px;
+}
+
+.otp .num {
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+}
+
+.otp p {
+  font-size: smaller;
+}
+
+.dep-button {
+  padding: 3px 25px;
+  position: relative;
+  top: -30px;
+  right: -180px;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid #c035e5;
+  cursor: pointer;
+}
+
+.with-button {
+  padding: 3px 25px;
+  position: relative;
+  top: -20px;
+  right: -180px;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid #c035e5;
+  cursor: pointer;
+}
+
+.sh {
+  position: relative;
+  top: -20px;
+}
+
+.raze {
+  position: relative;
+  bottom: -100px;
+}
+
+.peso {
+  position: relative;
+  left: -53px;
+  bottom: -5px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.php {
+  position: relative;
+  bottom: -1px;
+  left: -75px;
+  font-weight: bolder;
+  font-size: 19px;
+  color: #f1f1f1;
+}
+
+
+
+.popup2 .modal-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%) scale(0);
+          transform: translate(-50%, -150%) scale(0);
+  width: 500px;
+  height: 580px;
+  z-index: 2;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px 5px #4b4b4b;
+          box-shadow: 0px 0px 30px 5px #4b4b4b;
+  z-index: 1;
+}
+
+.popup2 .modal-content .form-heading {
+  text-align: center;
+}
+
+.popup2 .modal-content .form-heading h2 {
+  padding-left: 30px;
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.popup2 .modal-content .wallet-balance {
+  border: 1px solid;
+  border-radius: 12px;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(#9d33ff), to(#f37cff));
+  background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+  background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+}
+
+.popup2 .modal-content .wallet-balance span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.popup2 .modal-content .wallet-balance p {
+  padding: 0px 20px;
+  margin: 10px;
+}
+
+.popup2 .modal-content .method-label {
+  padding: 0 30px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.popup2 .modal-content h2 {
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.popup2 .modal-content .radio-methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup2 .modal-content .radio-methods .options {
+  padding: 6px;
+  border-radius: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  margin: 8px 50px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.popup2 .modal-content .radio-methods .options:hover, .popup2.modal-content .radio-methods .options:focus-within {
+  background: rgba(159, 159, 159, 0.1);
+}
+
+.popup2 .modal-content .radio-methods .options input[type="radio"] {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: none;
+  border: 0;
+  -webkit-box-shadow: inset 0 0 0 1px #c035e5;
+          box-shadow: inset 0 0 0 1px #c035e5;
+  -webkit-box-shadow: inset 0 0 0 1.5px #c035e5;
+          box-shadow: inset 0 0 0 1.5px #c035e5;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25), -webkit-box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+  pointer-events: none;
+}
+
+.popup2 .modal-content .radio-methods .options input[type="radio"]:focus {
+  outline: none;
+}
+
+.popup2 .modal-content .radio-methods .options input[type="radio"]:checked {
+  background-color: #c035e5;
+}
+
+.popup2 .modal-content .radio-methods .options .radio-span {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.popup2 .modal-content .form {
+  display: block;
+  padding: 0 30px;
+}
+
+.popup2 .modal-content .form input {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 6px 0;
+}
+
+.popup2 .modal-content .form .input-amount {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.popup2 .modal-content .form .input-receiver {
+  padding-bottom: 10px;
+}
+
+.popup2 .modal-content .form #error {
+  text-align: center;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.popup2 .modal-content #php-form {
+  display: none;
+}
+
+.popup2 .modal-content .send-btn {
+  background-color: white;
+  border: 2px solid #c035e5;
+  color: black;
+  padding: 8px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  right: -125px;
+}
+
+.popup2 .modal-content2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%) scale(0);
+          transform: translate(-50%, -150%) scale(0);
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px 5px #4b4b4b;
+          box-shadow: 0px 0px 30px 5px #4b4b4b;
+  z-index: 1;
+}
+
+.popup2 .modal-content2 .form-heading {
+  text-align: center;
+}
+
+.popup2 .modal-content2 .form-heading h2 {
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+}
+
+.popup2 .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 30px;
+  padding: 2px 5px 7px 5px;
+  background: white;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+
+
+.form-popup .images {
+  height: 160px;
+  width: 160px;
+  margin-left: 35%;
+}
+
+.form-popup h3 {
+  text-align: center;
+}
+
+.form-popup .biller {
+  height: 28px;
+  width: 100%;
+}
+
+.form-popup .payer {
+  height: 28px;
+  width: 100%;
+}
+
+.form-popup .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 30px;
+  padding: 2px 5px 7px 5px;
+  background: white;
+}
+
+.form-popup .form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%) scale(0);
+          transform: translate(-50%, -150%) scale(0);
+  width: 500px;
+  height: 590px;
+  z-index: 2;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 30px 5px #4b4b4b;
+          box-shadow: 0px 0px 30px 5px #4b4b4b;
+  z-index: 1;
+}
+
+
+
+.form-popup.active3 .modal-content {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  top: -90px;
+  /* Set a style for the submit/login button */
+  /* Add a red background color to the cancel button */
+}
+
+.form-container input[type=text] {
+  /* When the inputs get focus, do something */
+}
+
+.form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: white;
+  color: black;
+  padding: 14px 16px;
+  border-color: violet;
+  margin-left: 25%;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.form-container .cancel {
+  background-color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+  background-color: rgba(161, 45, 214, 0.8);
+}
+
+.walter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(161, 45, 214, 0.8)), to(rgba(238, 23, 209, 0.5)));
+  background: linear-gradient(to left top, rgba(161, 45, 214, 0.8), rgba(238, 23, 209, 0.5));
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  height: 80px;
+  margin-top: 20px;
+}
+
+.walter .wallet-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.walter .wallet-info h3 {
+  color: white;
+  font-size: 1rem;
+  padding-top: 0;
+}
+
+.form-popup2 {
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin-top: 6%;
+  margin-right: 50%;
+  margin-left: 40%;
+  width: 22%;
+  height: 50%;
+}
+
+.form-popup2 h3 {
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+/*-----------------IMAGE UPLOAD CSS----------------*/
+.upload{
+  width: 175px;
+  position: relative;
+  margin: auto;
+}
+
+.upload img{
+  border-radius: 50%;
+  border: 8px solid #DCDCDC;
+}
+
+.upload .round{
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  background: #4c98ff;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type = "file"]{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}

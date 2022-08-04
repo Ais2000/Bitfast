@@ -1,0 +1,834 @@
+//things that make me comfortable
+*{
+    margin : 0;
+    padding : 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    //border: 1px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html, body{
+    border: none;
+}
+
+#profile_name{
+    font-size: 2rem;
+}
+#profile_username{
+    font-size: 1rem;
+}
+.sidebar_btn{
+    font-size: 1rem;
+
+}
+
+//actual design starts here
+body
+
+
+    .sidebar {
+        height : 100vh;
+        width : 16%;
+        margin-right: 2%;
+        margin-left: 9%;
+        position: fixed;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        .logo{
+          height: 10vh;
+            img{
+                width: 50%;
+                margin-top: 5%;
+            }
+        }
+        
+        .profile{
+
+          height: 30vh;
+
+            margin: 10% 0;
+            
+            img{
+                width: 70%;
+            }
+            h1{
+                color: black;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        .buttons a{
+          color: black;
+          
+        }
+        .buttons{
+            height: 50vh;
+            background-color: rgb(241, 241, 241);
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+
+            button{
+                background-color: transparent;
+                font-weight: 600;
+                width: 100%;
+                border: none;
+                padding: 10px;
+                
+                text-align: left;
+                text-indent: 20%;
+        
+                &:hover{
+                    background-color : rgb(245, 220, 255);
+
+                }
+                &:focus{
+                    color : rgb(8, 8, 8);
+                }
+            }
+        }
+    }
+
+    .right{
+      background-color: lightgray;
+      margin-left: 27%;
+      padding-right: 9%;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      height: 100vh;
+
+      .greetings h1{
+        text-align: left;
+        margin: 1% 3%;
+        font-size: 150%;
+        font-weight: 500;
+      }
+
+      .wallets{
+        margin: 1%;
+        padding: 5%;
+        border-radius: 25px;
+        background-color: white;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #title{
+          font-size: 200%;
+        }
+
+        h1{
+          text-align: left;
+        }
+
+        .wallet{
+          border-radius: 15px;
+          background: #ccb9e8;
+          margin: 1%;
+          padding: 2% 5%;
+          color: white;
+
+          h3{
+            font-weight: 300;
+          }
+          .walletamount{
+            font-weight: 700;
+            font-size: 200%;
+          }
+
+        }
+
+        button{
+          width: 40%;
+          align-self:flex-end;
+          background-color: transparent;
+          padding: 1%;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgba(157,51,255,1);
+          border-color: rgba(157,51,255,1);
+          
+
+          img{
+            width: 1vw;
+          }
+
+        }
+
+        .miniconverter{
+          display: flex;
+          flex-wrap: wrap;
+          h1{
+            width: 100%;
+          }
+          input{
+            padding: 2%;
+            flex-grow: 1;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-color: rgba(157,51,255,1);
+          }
+          label{
+            padding: 2%;
+            align-self: center;
+            text-align: center;
+            flex-grow: 1;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border: 1px solid rgba(157,51,255,1);
+            border-left: none;
+          }
+
+          img{
+            width: 1vw;
+            height: 1vw;
+            align-self: center;
+            margin: 0 2%;
+          }
+        }
+      }
+
+      .convertionRate{
+        width: 20vw;
+        display: flex;
+        height: 10vh;
+        background: white;
+        margin: 5% 1%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        #exchangerateBTS{
+          background: linear-gradient(90deg, rgba(181,255,248,1) 0%, rgba(95,160,255,1) 100%);
+          border-top-left-radius: 25px; 
+          border-bottom-left-radius: 25px;
+        }
+        img{
+          background: linear-gradient(90deg, rgba(95,160,255,1) 0%, rgba(181,255,248,1) 100%);
+          position: absolute;
+          width: 1vw;      
+          border-radius: 25px;
+          transform: scale(5);
+          padding: 2px;
+        }
+        h1{
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .transaction{
+        background-color: white;
+        height: 60vh;
+        border-radius: 25px;
+        padding: 1%;
+        margin: 0 1%;
+        h2{
+          text-align: center;
+        }
+      }
+    }
+
+    .item1{    
+        height: 50px;
+        width: 200px;
+        position: relative;
+        right: -250px;
+        top: -20px;
+        border-radius: 7px;
+        background: linear-gradient(90deg, rgba(157,51,255,1) 0%, rgba(243,124,255,1) 100%);
+      }
+      .item2{
+        height: 50px;
+        width: 200px;
+        position: relative;
+        right: -250px;
+        border-radius: 7px;
+        background: linear-gradient(90deg, rgba(157,51,255,1) 0%, rgba(243,124,255,1) 100%);
+      }
+      .item2 p{
+        color: white;
+        font-size: 14px;
+        position: relative;
+        left: -37px;
+        padding: 3px 0px;
+        span{
+          font-size: 19px;
+          font-weight: bolder;
+          position: relative;
+          right: -8px;
+          top: -3px;
+        }
+      }
+      .popup .content {
+       position: absolute;
+       top: 30%;
+       left: 50%;
+       transform: translate(-50%,-150%) scale(0);
+       width: 450px;
+       height: 550px;
+       z-index: 2;
+       text-align: center;
+       padding: 20px;
+       background: white;
+       box-shadow: 0px 0px 30px 5px rgb(75, 75, 75);
+       z-index: 1;
+      }
+      
+      .popup .close-btn {
+       position: absolute;
+       right: 20px;
+       top: 20px;
+       width: 30px;
+       height: 30px;
+       color: black;
+       font-size: 30px;
+       padding: 2px 5px 7px 5px;
+       background: white
+       
+       }
+
+      .popup.active{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+      }
+      
+      .popup.active .content {
+      transition: all 300ms ease-in-out;
+      transform: translate(-50%,-50%) scale(1);
+      }
+      
+      h1 {
+       text-align: center;
+       color: black;
+       font-size: 20px;
+       font-weight: 600;
+       padding-top: 15px;
+       padding-bottom: 10px;
+      }
+      
+      a {
+       font-weight: 600;
+       color: white;
+      }  
+      
+      .sh .otp .second-button {
+      padding: 3px 25px;
+      position: relative;
+      top: -10px;
+      font-weight: bolder;
+      background-color: white;
+      border-radius: 3px;
+      border: 2px solid #c035e5;
+      cursor: pointer;     
+      }
+      
+      
+      .box{
+        position: relative;
+        transform: translate(-50%,-50%);
+        width: 410px;
+        padding: 40px;
+        bottom: -60px;
+        right: -25px;
+      }
+      .box h2{
+        margin: 0 0 30px;
+        padding: 0px;
+        color: black;
+        text-align: center;
+      }
+      .box .input-box{
+        position: relative;
+        right: -150px;
+        top: -45px;
+      }
+      .box .input-box input{
+        width: 120%;
+        padding: 10px 0px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid black;
+      }
+      .box .input-box label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0px;
+        font-size: 12px;
+        color: black;
+        transition: .5s;
+        text-align: left;
+      }
+      
+      .box .input-box input:focus ~ label,
+      .box .input-box input:valid ~ label{
+        top: -18px;
+        left: 0px;
+        color: black;
+        font-size: 12px;
+      }
+      
+      body .rad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        position: relative;
+        top: -50px;
+      }
+      .rad p{
+        font-size: 16px;
+        position: relative;
+        left: -130px;
+        top: -95px;
+      }
+      .rad .radio-container{
+        position: relative;
+        top: -80px;
+        cursor: pointer;
+        
+      }
+      
+      .otp{
+        color: black;
+        position: relative;
+        right: -180px;
+        top: -60px;
+      }
+      .otp .num{
+        background-color: white;
+        padding: 8px 50px;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+        bottom: -10px;
+      }
+      .otp p{
+        font-size: smaller;
+      }
+      .dep-button{
+      padding: 3px 25px;
+      position: relative;
+      top: -30px;
+      right: -180px;
+      font-weight: bolder;
+      background-color: white;
+      border-radius: 3px;
+      border: 2px solid #c035e5;
+      cursor: pointer;     
+      }
+      .with-button{
+        padding: 3px 25px;
+        position: relative;
+        top: -20px;
+        right: -180px;
+        font-weight: bolder;
+        background-color: white;
+        border-radius: 3px;
+        border: 2px solid #c035e5;
+        cursor: pointer;  
+      }
+      .sh{
+        position: relative;
+        top: -20px;
+      }
+      
+      .raze{
+        position: relative;
+        bottom: -100px;
+      }
+      
+      .peso{
+        position: relative;
+        left: -53px;
+        bottom: -5px;
+        font-size: 14px;
+        color: #f1f1f1;
+      }
+      
+      .php{
+        position: relative;
+        bottom: -1px;
+        left: -75px;
+        font-weight: bolder;
+        font-size: 19px;
+        color: #f1f1f1;
+      }
+      
+      // send money
+      .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 40px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            padding-top: 10px;
+            border: 1px solid #888;
+            width: 500px;
+            box-shadow: 0px 0px 30px 5px rgb(75, 75, 75);  
+            .form-heading {
+                text-align: center;
+                h2 {
+                    padding-left: 30px;
+                    margin: 10px 0 10px 0;
+                    text-transform: uppercase;
+                }
+            }
+            .wallet-balance{
+                border: 1px solid;
+                border-radius: 12px;
+                color: white;
+                width: 50%;
+                margin: 0 auto;
+                background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+                background: linear-gradient(90deg, #9d33ff 0%, #f37cff 100%);
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                p {
+                    padding: 0px 20px;
+                    margin: 10px;
+                }
+            }
+            .method-label{
+                padding: 0 30px;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+            .radio-methods{
+                display: flex;
+                justify-content: center;
+                .options{
+                    padding: 6px;
+                    border-radius: 50px;
+                    display: inline-flex;
+                    cursor: pointer;
+                    transition: background .2s ease;
+                    margin: 8px 50px;
+                    -webkit-tap-highlight-color: transparent;
+                    &:hover,
+                    &:focus-within{
+                        background: rgba(#9F9F9F,.1)
+                    }
+                    input[type="radio"] {
+                        vertical-align: middle;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 10px;
+                        background: none;
+                        border: 0;
+                        box-shadow: inset 0 0 0 1px #c035e5;
+                        box-shadow: inset 0 0 0 1.5px #c035e5;
+                        appearance: none;
+                        padding: 0;
+                        margin: 0;
+                        transition: box-shadow 150ms cubic-bezier(.95,.15,.5,1.25);
+                        pointer-events: none;
+                        &:focus{
+                            outline: none;
+                        }
+                    
+                        &:checked{  
+                            background-color: #c035e5;
+                        }
+                    }
+                    .radio-span {
+                        vertical-align: middle;
+                        display: inline-block;
+                        line-height: 20px;
+                        padding: 0 8px;
+                    }
+                }
+            }
+            .form {
+                display: block;
+                padding: 0 30px;
+                input {
+                    outline: none;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid grey;
+                    padding: 6px 0;
+                }
+                .input-amount {
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                }
+                .input-receiver {
+                  padding-bottom: 10px;
+                }
+                #error {
+                    text-align: center;
+                    color: red;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            #php-form {
+                display: none;
+            }
+            .send-btn {
+                background-color: white; 
+                border: 2px solid #c035e5;
+                color: black;
+                padding: 8px 38px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 0 auto;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 600;
+                position: relative;
+                right: -125px;
+            }
+        }
+        .modal-content2 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 500px;
+            height: 350px;
+            box-shadow: 7px 7px 5px 2px rgba(50, 50, 50, 0.75);   
+            .form-heading {
+                text-align: center;
+                h2 {
+                    padding-left: 20px;
+                    margin: 10px 0 0 0;
+                }
+            }  
+        }
+        
+    }
+    /* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  width: 280px;
+} 
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin-top: 6%;
+  margin-right: 50%;
+  margin-left: 40%;
+  width: 28%;
+  height: auto;
+  .images{
+    height: 160px;
+    width: 160px;
+    margin-left: 35%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .biller{
+    height: 28px;
+    width: 100%;
+    
+  }
+  .payer{
+    height: 28px;
+    width: 100%;
+  }
+}
+
+.form-popup .close-btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  font-size: 30px;
+  padding: 2px 5px 7px 5px;
+  background: white;
+}
+// .form-popup2 {
+//   display: none;
+//   position: fixed;
+//   border: 3px solid #f1f1f1;
+//   z-index: 9;
+//   margin-top: 6%;
+//   margin-right: 50%;
+//   margin-left: 40%;
+//   backdrop-filter: blur(5x);
+//   width: 28%;
+//   height: auto;
+//   .images{
+//     height: 160px;
+//     width: 160px;
+//     margin-left: 35%;
+//   }
+//   h3 {
+//     text-align: center;
+//   }
+//   .biller{
+//     height: 28px;
+//     width: 100%;
+    
+//   }
+//   .payer{
+//     height: 28px;
+//     width: 100%;
+//   }
+// }
+/* Full-width input fields */
+%input-default{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  top: -90px;
+
+  input[type=text]{
+    @extend %input-default;
+
+    /* When the inputs get focus, do something */
+    &:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+  }
+  input[type=password]{
+    @extend %input-default;
+
+    &:focus{
+      background-color: #ddd;
+      outline: none;
+    }
+  }
+
+  
+/* Set a style for the submit/login button */
+  .btn {
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+    border-color: violet;
+    margin-left: 25%;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+  }
+
+  /* Add a red background color to the cancel button */
+  .cancel {
+    background-color: white;
+  }
+}
+
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover{
+  opacity: 1;
+  background-color:rgba(161, 45, 214, 0.8);
+}
+
+.walter {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(161, 45, 214, 0.8),
+    rgba(238, 23, 209, 0.5)
+  );
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  height: 80px;
+
+  .wallet-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    h3{
+      color: white;
+      font-size: 1rem;
+      padding-top: 0; 
+    }
+  }
+  
+}
+
+.form-popup2 {
+  //display: none;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  margin-top: 6%;
+  margin-right: 50%;
+  margin-left: 40%;
+  width: 22%;
+  height: 50%;
+  
+  h3 {
+    text-align: left;
+  }
+}
+
+
+

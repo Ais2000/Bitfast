@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(1%, #1e125c), color-stop(98%, #521b76));
+  background: linear-gradient(to bottom right, #1e125c 1%, #521b76 98%);
+}
+
+body #overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  place-items: center;
+}
+
+body #overlay h1 {
+  color: white;
+}
+
+body .header img {
+  width: 10%;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+body .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  height: 70vh;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 30px 5px #4b4b4b;
+          box-shadow: 0px 0px 30px 5px #4b4b4b;
+}
+
+body .container .center {
+  width: 50%;
+  text-align: center;
+  font: size 20px;
+  line-height: 45px;
+  margin-top: -40px;
+  background: transparent;
+}
+
+body .container .center h2 {
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+body .container .center input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  width: 70%;
+  height: 125%;
+  border-top-right-radius: 5px;
+  padding: 10px;
+}
+
+body .container .center input[type=checkbox] {
+  width: 15px;
+  position: relative;
+  cursor: pointer;
+  height: 10px;
+}
+
+body .container .center #submit {
+  margin-top: 5%;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 3% 15%;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+}
+
+body .container .center #signup {
+  border-style: hidden;
+  background: transparent;
+  color: #000;
+}
+
+body .container .center #signin {
+  border-style: hidden;
+  background: transparent;
+  position: relative;
+  margin-bottom: 20%;
+}
+
+body .container .center #rememberme {
+  padding-right: 28%;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+body .container .center #rememberme #remembermeCB {
+  margin-left: -10px;
+}
+
+body .container .center #accept {
+  padding-right: 15%;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+body .container .center #accept #acceptCB {
+  padding-left: 10%;
+}
+
+body .container .vector {
+  background-color: #7bfcf3;
+  height: 100%;
+  width: 50%;
+}
+
+body .container .vector .vectorwithtext {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .container .vector .vectorwithtext img {
+  width: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+body .container .vector .vectorwithtext h3 {
+  text-align: center;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background-color: #7bfcf3;
+  color: #000;
+  top: 20%;
+  margin-left: 50%;
+  height: 60%;
+  width: 20%;
+  z-index: 1;
+  position: absolute;
+}
+
+#message h3 {
+  padding: 10px 35px;
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 20%;
+}
+
+#message p {
+  line-height: 2;
+  padding: 10px 35px;
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 25%;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+/*# sourceMappingURL=style.css.map */
